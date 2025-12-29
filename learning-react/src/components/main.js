@@ -19,8 +19,9 @@ export default class Main extends Component{
             <div className="main">
                 <h1>{novaTarefa}</h1>
 
-                <form action='#'>
-                    <input onChange={this.handleChange} type="text"></input>
+                <form action='#' className="form">
+                    <input onChange={this.handleChange} type="text"
+                    value={novaTarefa}></input>
                     <button type="submit">Enviar</button>
                 </form>
             </div>

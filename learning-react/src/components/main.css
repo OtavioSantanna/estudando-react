@@ -1,5 +1,5 @@
 .main{
-    background: #ffff;
+    background: #F9F9F9;
     padding: 30px;
     margin: 50px auto;
     max-width: 500px;
@@ -10,4 +10,27 @@
 .main h1{
     font-size: 20px;
     text-align: center;
+    color: #10002B;
+}
+
+.form{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form input[type="text"]{
+    height: 40px;
+    padding: 0 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    min-width: 80%;
+}
+
+.form button[type="submit"]{
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: #10002B;
 }
