@@ -1,9 +1,10 @@
 import React, {Component} from "react";
 
 import './main.css';
-
 import Tarefas from './Tarefas';
 import Form from './form';
+import foto from './assets/foto.jpg';
+
 
 export default class Main extends Component{
     state = {
@@ -68,6 +69,7 @@ export default class Main extends Component{
 
         return(
             <div className="main">
+                <h2>Adicione na lista</h2>
                 <h1>{novaTarefa}</h1>
 
                 <Form
@@ -81,6 +83,13 @@ export default class Main extends Component{
                     handleEdit={this.handleEdit}
                     handleDelete={this.handleDelete}
                 />
+
+                <img
+                src={foto}
+                alt="Minha foto"
+                style={{ width: '400px', height: 'auto' }}
+                />
+
 
             </div>
         )
